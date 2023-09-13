@@ -88,7 +88,6 @@ header{
 }
 .shop{
     text-align: center;
-    margin-left: 10rem;
 }
 .heading span{
     text-align: center;
@@ -97,13 +96,11 @@ font-weight: 500;
 color: var(--main-color);
 text-transform: uppercase;
 }
-
 .shop-container,
 .new-container{
     display:grid;
-    grid-template-columns: 300px 300px 300px;
-    gap:1rem;
-    margin-top:2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap:2rem;
 }
 .box{
     position: relative;
