@@ -58,7 +58,7 @@ header{
 .home{
     width:100%;
     min-height: 100vh;
-    background-image: url(img/background.jpg);
+    background-image: url(img/background4.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position:right ;
@@ -86,7 +86,9 @@ header{
 .btn:hover{
     background: #ecdd99;
 }
-.shop{
+.shop,
+.new,
+.brands{
     text-align: center;
 }
 .heading span{
@@ -157,9 +159,25 @@ color: var(--main-color);
 .new-container .box{
     border-radius: 4px;
 }
-
-
-
+.new-container .box .box-img{
+    border-radius: 4px;
+}
+.brands-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+    align-items: center;
+    justify-content: space-between;
+    gap:1rem;
+    margin-top: 2rem;
+}
+.brands-container img{
+    width: 100px;
+    filter:grayscale(1);
+}
+.brands-container img:hover{
+    width: 100px;
+    filter:grayscale(0);
+}
 
 /*_____________________
 _____________________*/
