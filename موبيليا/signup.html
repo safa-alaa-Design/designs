@@ -15,7 +15,12 @@
 <body>
    <!--Navbar-->
    <header>
+    <div>
+    <a href="#" class="logoilya">
+        <img src="img/logoilya.png" alt="" width="100" height="40px">
+    </a>
     <a href="#" class="logo"> İLYA <span>HOME</span></a>
+</div>
     <div class="bx bx-menu" id="menu-icon"></div>
     <ul class="navbar">
         <li><a href="Mobilya.html">Home</a></li>
@@ -24,24 +29,41 @@
         <li><a href="#contact">Contact</a></li>
         <li><a href="#new"><i class='bx bx-heart'></i></a></li>
         <li><a href="#brands"><i class='bx bx-shopping-bag'></i></a></li>
-        <li><a href="#new"><i class='bx bx-user'></i></a></li>
+        <li><a href="sginIn.html"><i class='bx bx-user'></i></a></li>
     </ul>
    </header>
-   <!---sgin in-->
+   <!--siginup-->
    <section class="siginin">
     <h2>sign in</h2>
-    <form action="">
+    <form action="" >
+        <h3>First Name</h3>
+        <input  type="text">
+        <h3>Last Name</h3>
+        <input  type="text">
         <h3>E-mail</h3>
-        <input  type="email" >
+        <input  type="email">
         <h3> password</h3>
-        <input  type="password" >
-        <h3><a href="paswrdforget.html"> Did you forget your password?</a></h3>
-        <button onclick="window.location.href='project.html'" class="noraml">Sign In</button>
-        <a href="signup.html">Sign Up</a>
+        <input  type="password">
+        <button onclick="window.location.href='hisap.html'" class="noraml">Create</button>
+        
     </form>
 </section>
 
-
+<!--Brands-->
+<section class="brands" id="brands">
+    <div class="heading">
+        <span>Brands</span>
+        <h2>Our Brands Partners</h2>
+    </div>
+    <div class="brands-container">
+        <img src="img/Google.png" alt="">
+        <img src="img/amazon.png" alt="">
+        <img src="img/netflix.png" alt="">
+        <img src="img/tesla.png" alt="">
+        <img src="img/starbucks.png" alt="">
+        <img src="img/zoom.png" alt="">
+    </div>
+</section>
 
 </body>
 </html>
