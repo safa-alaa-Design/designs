@@ -1,321 +1,162 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 *{
-    margin: 0;
+    margin:0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'spartan' ,sans-serif;
-}
-body{
-    width: 100%;
-}
-button.normal{
-    font-size: 14px;
-    font-weight: 600;
-    color: #fff;
-    background-color: #c4b43e;
-    padding: 15px 30px;
-    border-radius: 4px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    transition: 0.2s;
-    
-}
-h1{
-    font-size: 50px;
-    line-height: 64px;
-    color: #222;
-}
-h2{
-    font-size: 46px;
-    line-height: 54px;
-    color: #222;
-}
-h4{
-    font-size: 20px;
-    color: #222;
-}
-h6{
-    font-weight: 700;
-    font-size: 12px;
-}
-p{font-size: 16px;
-color: #465b52;
-}
-.section-p2{
-    padding: 40px 80px;
-}
-.section-m2{
-    margin: 40px 80px;
-}
-
-/*header*/
-
-.header{
-    display: flex;
-    justify-content:space-between;
-    text-align: center;
-    padding: 20px 80px;
-    background-color: white;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
-    z-index:1;
-    position:sticky;
-    top: 0;
-    left: 0;
-
-   
-    
-    
-}
-
-
-.nav{
-    display: flex;
-    justify-content: center;
-    align-items:center;
-
-}
-.nav li{
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
     list-style:none;
-    padding:0 15px;
-    position: relative;
-}
-.nav li a{
     text-decoration: none;
-    font-size: 16px;
-    font-weight:600;
-    color:#1a1a1a;
-    transition: 0.3s;
+    font-family: 'Poppins', sans-serif;
 }
-.nav li a:hover{
-    color: #c4b43e;
+:root{
+    --text-color:#000000;
+    --main-color:#ecdd76;
 }
-.nav li a.active{
-    color: #c4b43e;
+section{
+    padding: 50px 10%;
 }
-.nav li a.active::after{
-    content: "";
-    width: 30%;
-    height: 2px;
-    position: absolute;
-    bottom: -4px;
-    left: 20px;
-    background-color :#c4b43e;
-    
-}
- .header img.logo{
-    width: 115px;
-    height: 70px;
-    position: absolute;
-    left: 60px;
-    top: -2px;
-  
-    
- }
- .nav li a:hover::after{
-     content: "";
-     width: 30%;
-     height: 2px;
-     position: absolute;
-     bottom: -4px;
-     left: 20px;
-     background-color :#c4b43e;
-     
-     
- }
-
- #navlinks .nav .item-cont{
-    display: inline-block;
-    
-}
-#navlinks .nav div.item{
-  position: absolute;
-  left: 10px;
-  min-width: 160;
-  background-color:white;
-  padding-top:5px;
-  margin-top: 3px;
-  display: none;
-  transition: 0.6s;
-  z-index: 4;
-
-}
-#navlinks .nav div.item a{
-    display: block;
-    padding: 12px 14px;
-    text-transform: uppercase;
- 
-   
-}
-#navlinks .nav li.item-cont:hover div.item{
-    display: block;
-}
-#navlinks .nav  span{
-   font-size: 10px;
-    background-color: #c4b43e;
-    width: 14px;
-    height: 13px;
-    border-radius: 15px;
-   position: relative;
-   right: 23px;
-   top: 7px;
-   color: #fff;
-   
-}
-#timshop{
-    color: black;
-   position: absolute;
-   right: 40px;
-   bottom: 23px;
-  
-
-}
-/*<!---القسم الاساسي-->*/
-
-
-.heri{
-    background-image:url(mobiliya/hiro8.jpg) ;
-    height: 90vh;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    filter: brightness(0.6);
-    padding: 0 80PX;
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    right: 0;
+    z-index: 1000;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-   
-
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 100px;
+    background-color: #edecea;
 }
-.heri h4{
-    padding-bottom: 15px;
-    color: #222;
+.logo{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color:var(--text-color);
 }
-.heri h1{
-color: #529377;
+.logo span{
+    color:var(--main-color);
 }
-.heri h2{
-    color:#529377;
+.navbar{
+    position: relative;
+    display: flex;
 }
-.heri p{
-    color: #c4b43e;
-    padding-bottom: 15px;
+.navbar a{
+    font-size:1rem;
+    padding:10px 20px;
+    font-weight:  500;
+    color:var(--text-color);
 }
-.heri button{
-    background-color: #c4b43e;
-   border-radius:4px;
-    color:#529377;
-    border: 0;
-    padding: 14px 60px 14px 45px ;
+.navbar a:hover{
+    color: var(--main-color);
+}
+#menu-icon{
+    font-size:2rem ;
     cursor: pointer;
-    font-size: 15PX;
-    font-weight: 700;
- 
+    display:none;    
 }
-.mobail{
-    display:none;
+.home{
+    width:100%;
+    min-height: 100vh;
+    background-image: url(img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:right ;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
 }
-#navlinks .fa-times {
-    display: none;
+.home-text h1{
+    font-size:2.7rem;
 }
-
-
-
-
-
-
-
-@media(max-width:799px){
-    #navlinks .nav{
-      display: flex;
-      flex-direction:column;
-      align-items: flex-start;
-      justify-content: flex-start;
-      height: 100vh;
-      width: 300px;
-      box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
-      padding: 80px 0 0 10px;
-      background-color: #fff;
-      z-index: 200 ;
-      transition: 1s;
-   }
-   #navlinks .nav svg{
-    display: none;
-  }
-   #navlinks{
-      position: absolute;
-      top: 0;
-      right: -300px;
-   }
-   #navlinks .out{
-      display: block;
-      position: absolute;
-      left: 30px;
-      top: 30px;
-      font-size: 14px;
-  }
-  
-   .header #navlinks li{
-      margin-bottom: 25px;
-
-   }
-   .header .mobail{
-      display:flex;
-      align-items: center;
-      z-index: -1;
-  }
-
- .mobail i{
-  font-size: 24px;
-  padding-left: 20px;
-  color: #1a1a1a;
- }
-#navlinks .nav  .span1{
-display: none;
+.home-text p{
+    font-size: 0.938rem;
+    margin: 0.4rem 0 1.8rem;
 }
-#navlinks .nav  span{
-    left: 20px;
-    top: 26px;
+.home-text span{
+    color: var(--main-color);
 }
-.heri{
-  background-position: top 30% right 30%;
-  padding: 0 80px;height: 70vh;
+.btn{
+    padding: 10px 14px ;
+    background-color: var(--main-color);
+    color:#fff ;
+    border-radius: 0.3rem;
+    font-size: 14px;
 }
-.heri h1 {
-    font-size: 25px;
+.btn:hover{
+    background: #ecdd99;
 }
-.heri h2{
-    font-size: 20px;
+.shop{
+    text-align: center;
+    margin-left: 10rem;
 }
-.heri h4{
-    font-size: 16px;
-}
-.heri p{
-    font-size: 15px;
-}
-.heri button{
-    padding: 12px 14px 12px 15px;
-    font-size: 12px;
+.heading span{
+    text-align: center;
+font-size: 14px;
+font-weight: 500;
+color: var(--main-color);
+text-transform: uppercase;
 }
 
-
+.shop-container,
+.new-container{
+    display:grid;
+    grid-template-columns: 300px 300px 300px;
+    gap:1rem;
+    margin-top:2rem;
 }
-@media(max-width:577px){
-    #navlinks .out{
-        display: block;
-    }
-.header .logo{
-    margin-left: -60px;
-
+.box{
+    position: relative;
+    box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.1);
+    border-radius: 44px 4px 4px 4px;
 }
-.heri{
-    padding: 0 20px;
-    background-position: 55%;
+.box .box-img{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 44px 4px 0 0;
 }
-h1{
-    font-size: 38px;
+.box .box-img img{
+width: 100%;
+height: 100%;
+object-fit:cover;
+object-position: center;
 }
-h2{
-    font-size: 32px;
-}}
-
+.box .box-img img:hover{
+transform: scale(1.1);
+transition: 0.5s;
+}
+.title-price{
+    display:flex;
+    justify-content: space-between;
+    padding: 12px;
+}
+.title-price h3{
+    font-size: 1rem;
+    font-weight:600;
+}
+.box span{
+    font-size: 1.1 rem;
+    font-weight:500;
+padding-left: 12px;
+color: var(--main-color);
+}
+.stars .bx{
+    color: var(--main-color);
+}
+.box .bx-cart{
+    position: absolute;
+    bottom:0;
+    right:0;
+    padding: 7px;
+    font-size:20px;
+    color:#fff;
+    border-radius: 4px 0 4px 0;
+    background: var(--main-color);
+}
+.box .bx-cart:hover{
+    background: #ecdd99;
+}
+.new-container .box{
+    border-radius: 4px;
+}
