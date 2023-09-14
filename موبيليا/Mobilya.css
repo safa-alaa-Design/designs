@@ -15,7 +15,7 @@
     --main-color:#ecdd76;
 }
 section{
-    padding: 50px 10%;
+    padding: 50px 60px;
 }
 header{
     position:fixed;
@@ -28,16 +28,29 @@ header{
     justify-content: space-between;
     padding: 18px 100px;
     background-color: #edecea;
+    padding: 13px 46px;
 }
 .logo{
     font-size: 1.2rem;
     font-weight: 600;
     color:var(--text-color);
 }
-.logoilya{
-  
-    background-color:#000000;
+.logoss{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1px 0;
+    margin: -10px 0;
+
 }
+.logoss .logoilya {
+  
+   margin: 2px 0 4px 3px ;
+   padding: 0px;
+   font-size: 1.2rem;
+
+}
+  
 .logo span{
     color:var(--main-color);
 }
@@ -91,27 +104,45 @@ header{
     background: #ecdd99;
 }
 .shop,
-.new,
-.brands{
+.new{
     text-align: center;
 }
 .heading span{
-    text-align: center;
+text-align: center;
 font-size: 14px;
 font-weight: 500;
 color: var(--main-color);
 text-transform: uppercase;
+display: block;
+}
+.shop .heading  h2{
+   display: inline-block;
+   
+}
+.shop .heading{
+    position: relative;
+}
+.shop .heading  a{
+    color: #ecdd76;   
+    display:flex;
+    justify-content: end;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+
 }
 .shop-container,
 .new-container{
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, auto));
     gap:2rem;
+    margin-top: 10px;
 }
 .box{
     position: relative;
     box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.1);
     border-radius: 44px 4px 4px 4px;
+
 }
 .box .box-img{
     width: 100%;
@@ -166,7 +197,16 @@ color: var(--main-color);
 .new-container .box .box-img{
     border-radius: 4px;
 }
-
+/*select*/
+.select{
+    box-shadow: 0px 4px 4px 0px;
+    margin-bottom: 5px;
+    border-radius: 8px 2px;
+    
+}
+.select:hover{
+    background-color:var(--main-color);
+}
 /*urun box*/
 
 .urun-box{
@@ -201,61 +241,103 @@ color: var(--main-color);
 .urun-box h2{
     font-weight: 900;
     font-size: 18px;
-    color: black;
+    color: #ecdd99;
     padding-top: 5px;
     text-transform: uppercase;
 }
 .urun-box h3{
     font-weight: 800;
     font-size: 12px;
-    color:#0e0e0e;
+    color:#111;
     padding-bottom: 20px;
 }
 .urun-box .withe{
     font-size: 10px;
     font-weight: 600;
-    color:#202020;
+    color:#ecdd99;
     background-color: transparent;
     padding: 10px 15px;
     border-radius: 4px;
-    border: 1px solid #202020;
+    border: 1px solid #ecdd99;
     outline: none;
     cursor: pointer;
     transition: 0.2s;
 }
 .urun-box .boxs:hover .withe{
-    background-color: #c4b43e ;
-    border: 1px solid #c4b43e;
-    color: #000;
+    background-color: #ecdd99 ;
+    border: 1px solid #fff;
+    color: #fff;
 }
 
-
-
-
-
-
-
-
-
-
-
-.brands-container{
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+/*subscribe*/
+.newsletter{
+    display:flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    gap:1rem;
+    background-image: url(img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+}
+.newsletter h2{
+    color:#fff;
+}
+.news-box{
+    display: flex;
+    align-items: center;
     margin-top: 2rem;
 }
-.brands-container img{
-    width: 100px;
-    filter:grayscale(1);
+.news-box input{
+    width:260px ;
+    height:44px;
+    border:none;
+    outline:none;
+    background: #fff;
+    padding: 10px;
 }
-.brands-container img:hover{
-    width: 100px;
-    filter:grayscale(0);
+.news-box .btn{
+    height: 44px;
+    padding: 11px;
+    border-radius: 0;
+    font-weight: 500;
+    text-transform: uppercase;
 }
 
+/*footer*/
+.text-center{
+    text-align: center;
+   
+}
+#footer{
+    width: 100%;
+    background-color:var(--text-color) ;
+    margin-top: 70px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+#footer h1{
+    color:white;
+    padding-top:20px ;
+}
+#footer p{
+    color:white;
+}
+.icons i{
+    color:var(--main-color);
+    font-size: 20px;
+    cursor:pointer
+}
+.copyright{
+    color: white;
+    margin-top: 20px;
+}
+.credite{
+    color:white;
+}
+.copyright span{
+    color:var(--main-color)
+}
 /*_____________________
 _______ sigin in______________*/
 
@@ -328,3 +410,192 @@ ____________ pasworde forget_________*/
      padding-bottom: 10px;
   
   }
+
+
+
+
+  /*_________________________
+  __________about ______________*/
+
+
+  #about-heder{
+    background-image: url(img/background.jpg);
+    filter: brightness(0.25) ;
+    background-position:center;
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column ;
+    padding: 40px 80px;
+}
+#about-heder h1{
+    color:#000;
+    }
+    #about-heder p{
+        color: #000;
+    }
+    #about{
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+    }
+    #about img{
+        width: 50%;
+        margin: auto;
+    }
+    #about .abouttext{
+        padding-left: 40px;
+        width: 50%;
+    }
+    #about .abouttext p{
+      
+        padding: 20px 0 20px 0;
+    }
+    
+#about-app{
+    text-align: center;
+    margin-top: -70px;
+}
+#about-app video{
+    width: 70%;
+    height: 100%;
+    margin: 30px auto 0 auto; 
+}
+#about-app .video{
+   
+    border-radius: 20px;
+}
+#feachure{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+
+#feachure .fe-box{
+    width: 180px;
+    text-align: center;
+    padding: 25px 20px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03) ;
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 20px 15px;
+}
+#feachure .fe-box:hover{
+    box-shadow: 10px 10px 54px rgba(0, 0, 0, 0.03) ;
+}
+#feachure .fe-box img{
+    width: 100%;
+    height: 95px;
+    margin-bottom: 10px;
+}
+#feachure .fe-box h6{
+    padding: 9px 8px 10px 8px;
+    line-height: 1px;
+   border-radius: 4px;
+   color: #088178;
+   background-color:#ecdd99;
+   display: inline-block;
+
+}
+#feachure .fe-box:nth-child(2) h6{
+    background-color: #ecdd99;
+
+}
+#feachure .fe-box:nth-child(3) h6{
+    background-color: #ecdd99;
+
+}
+#feachure .fe-box:nth-child(4) h6{
+    background-color: #ecdd99;
+
+}
+#feachure .fe-box:nth-child(5) h6{
+    background-color: #ecdd99;
+
+}
+#feachure .fe-box:nth-child(6) h6{
+    background-color: #ecdd99;
+
+}
+
+
+
+/**___________________
+___________comtact__________*/
+
+
+#contactdatalis{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ #contactdatalis .datalis{
+    width: 40%;
+ }
+ #contactdatalis .datalis span,
+ #fromedatalis span{
+    font-size: 12px;
+ }
+ #contactdatalis .datalis h2,
+ #fromedatalis h2{
+    font-size: 36px;
+    line-height: 35px;
+    padding: 20px 0;
+ }
+ #contactdatalis .datalis h3{
+    font-size: 16px;
+    padding-bottom: 15px;
+ }
+ #contactdatalis .datalis li{
+    display: flex;
+    padding: 10px 0;
+    text-decoration: none;
+ }
+
+ #contactdatalis .datalis li i{
+    font-size: 14px;
+    padding-right: 22px;
+ }
+ #contactdatalis .datalis li p{
+    font-size: 14px;
+    margin: 0;
+ }
+ #contactdatalis .map{
+    width: 55%;
+    height: 400px;
+ }
+ #contactdatalis .map iframe{
+    width: 100%;
+    height: 100%;
+ }
+
+
+ #fromedatalis form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 65%;
+ }
+ #fromedatalis form input ,
+ #fromedatalis form textarea{
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 15px 12px;
+    outline: none;
+    border: 1px solid #e1e1e1;
+ }   
+ #fromedatalis form button{
+  border: 1px solid  #ecdd99;
+ }
+ 
+ 
+ /***______________________
+ __________shop sayfasi______*/
+ #shospsayfasi{
+    margin: 100px 70px 50px 70px;
+    
+ }
