@@ -169,12 +169,31 @@ transition: 0.5s;
     font-size: 1rem;
     font-weight:600;
 }
+.shop-container .box p{
+    color: rgb(137, 35, 232);
+    padding: 7px 0;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 400;
+    
+    
+}
+
 .box form{
     font-size: 1.1 rem;
     font-weight:500;
-padding-left: 12px;
-color: var(--main-color);
+   padding-left: 12px;
+   color: var(--main-color);
+   
 }
+.box form input{
+    width: 60px;
+    border: 1px solid #ecdd76 ;
+    outline:none;
+    margin-bottom: 5px;
+
+}
+
 .stars .bx{
     color: var(--main-color);
 }
@@ -599,3 +618,174 @@ ___________comtact__________*/
     margin: 100px 70px 50px 70px;
     
  }
+
+
+
+
+  /***______________________
+ __________cart sayfasi______*/
+  #card{
+    overflow-x: auto;
+    margin-top: 50px;
+ }
+#card table{
+    width: 100%;
+    table-layout: fixed;
+    white-space: nowrap;
+    border-collapse: collapse;
+}
+#card table img{
+    width: 70px;
+}
+#card table td:nth-child(1){
+    width: 100px;
+    text-align: center;
+}
+#card table td:nth-child(2){
+    width: 150px;
+    text-align: center;
+}
+#card table td:nth-child(3){
+    width: 250px;
+    text-align: center;
+}
+#card table td:nth-child(4),
+#card table td:nth-child(5),
+#card table td:nth-child(6){
+    width: 150px;
+    text-align: center;
+}
+#card table td:nth-child(5) input{
+    padding: 10px 5px 10px 15px;
+    width: 70px;
+}
+#card table thead{
+    border: 1px solid #e2e9e1;
+    border-left: none;
+    border-right: none;
+}
+#card table thead td{
+    padding: 18px;
+    font-size: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+#card table thead tr td{
+    padding-top: 15px;
+}
+#card table tbody td{
+    font-size: 13px;
+}
+#card table tbody tr td{
+    padding-top: 15px;
+}
+
+#cartadd .carttotal{
+    width: 60%;
+    padding: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #e2e9e1 ;
+
+}
+#cartadd .carttotal table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+#cartadd .carttotal table td{
+    border: 1px solid #e2e9e1;
+    padding: 10px;
+    width: 50%;
+    font-size: 13px;
+}
+#cartadd .carttotal h3 {
+    padding-bottom: 10px;
+}
+
+#cartadd .carttotal button{
+    background-color: #ecdd99;
+    padding: 15px 10px 12px 15px;
+    color: #fff;
+    border: #ecdd76;
+}
+
+
+
+  /***______________________
+ ____________producte sayfasi___________*/
+
+
+
+#cardcoop{
+    display: flex;
+    margin-top: 20px;
+    
+    
+}
+.singl-pro-img
+{ width: 40%;
+
+}
+.smull-imge-grup{
+    display: flex;
+    flex-direction: row;
+    
+}
+.smull-imge-grup .small-imgs-col{
+    width: 25%;
+    padding-top: 15px;
+    padding-left: 5px;
+}
+#cardcoop .card-headr{
+    width: 50%;
+    margin-top: 30px;
+    padding-left: 80px;
+}
+ .card-headr h4{
+padding: 40px 0 20px 0;
+}
+.card-headr h3{
+    padding: 30px 0 20px 0;
+
+}
+ .card-headr h2{
+    font-size: 26px;
+}
+.card-headr .lik-buttn input{
+width: 80px;
+height: 47px;
+padding-left: 10px;
+font-size: 16px;
+margin-right: 6px;
+}
+.card-headr .lik-buttn input:focus{
+    outline: none;
+}
+.card-headr .lik-buttn button{
+    background-color: #ecdd76;
+    padding: 0 12px;
+    border: #ecdd76;
+
+    color: #fff;
+}
+.card-headr .lik-buttn {
+    display: flex;
+    margin-bottom: 30px;
+}
+.card-headr .lik-buttn .like{
+    
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+   background-color: #fff;
+    color:#000 ;
+    border: 1px solid #ecdd76;
+    line-height: 43px;
+   margin-left: 10px;
+   padding-left: 11px;
+
+}
+.card-headr  p{
+    padding-top: 10px;
+    color: #818ea8;
+}

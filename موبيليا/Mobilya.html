@@ -28,7 +28,7 @@
         <li><a href="abaut.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="#new"><i class='bx bx-heart'></i></a></li>
-        <li><a href="#brands"><i class='bx bx-shopping-bag'></i></a></li>
+        <li><a href="cart.html"><i class='bx bx-shopping-bag'></i></a></li>
         <li><a href="sginIn.html"><i class='bx bx-user'></i></a></li>
     </ul>
    </header>
@@ -48,6 +48,7 @@
         <h2>shop Now</h2>
         <a href="shop.html">view more <i class='bx bx-right-arrow-alt'></i></a>
     </div>
+
    
     <!--content-->
     <div class="shop-container">
@@ -66,18 +67,12 @@
                     <i class='bx bxs-star-half' ></i>
                 </div>
             </div>
-           <h5> Fiyat Almak İçin</h5>
-            <select label="ulke"name="ulkelistesi" form="ulkeler">
-                <option value="ulkeleri">Ulkeler</option>
-                <option value="Turkye">Turkye</option>
-                <option value="avruba">Avruba</option>
-                <option value="eygept">Eygept</option>
-                <option value="EMR">EMR</option>
-            </select>
+           <p onmouseup="select();"> Fiyatı görmek için şehri seçin</p>
+            
              <form action="" id="ulkeler">
                 <input type="text"  >
             </form>
-            <i class='bx bx-cart'></i>
+           <i class='bx bx-cart'    onclick="window.location.href='Producte.html'"></i>
         </div>
           <!--Box 2-->
           <div class="box">
@@ -94,14 +89,7 @@
                     <i class='bx bxs-star-half' ></i>
                 </div>
             </div>
-            <h5> Fiyat Almak İçin</h5>
-            <select label="ulke"name="ulkelistesi" form="ulkeler">
-                <option value="ulkeleri">Ulkeler</option>
-                <option value="Turkye">Turkye</option>
-                <option value="avruba">Avruba</option>
-                <option value="eygept">Eygept</option>
-                <option value="EMR">EMR</option>
-            </select>
+            <p onmouseup="select();"> Fiyatı görmek için şehri seçin</p>
              <form action="" id="ulkeler">
                 <input type="text"  >
             </form>
@@ -122,14 +110,7 @@
                     <i class='bx bxs-star-half' ></i>
                 </div>
             </div>
-            <h5> Fiyat Almak İçin</h5>
-            <select label="ulke"name="ulkelistesi" form="ulkeler">
-                <option value="ulkeleri">Ulkeler</option>
-                <option value="Turkye">Turkye</option>
-                <option value="avruba">Avruba</option>
-                <option value="eygept">Eygept</option>
-                <option value="EMR">EMR</option>
-            </select>
+            <p onmouseup="select();"> Fiyatı görmek için şehri seçin</p>
              <form action="" id="ulkeler">
                 <input type="text"  >
             </form>
@@ -150,14 +131,7 @@
                     <i class='bx bxs-star-half' ></i>
                 </div>
             </div>
-            <h5> Fiyat Almak İçin</h5>
-            <select label="ulke"name="ulkelistesi" form="ulkeler">
-                <option value="ulkeleri">Ulkeler</option>
-                <option value="Turkye">Turkye</option>
-                <option value="avruba">Avruba</option>
-                <option value="eygept">Eygept</option>
-                <option value="EMR">EMR</option>
-            </select>
+            <p onmouseup="select();"> Fiyatı görmek için şehri seçin</p>
              <form action="" id="ulkeler">
                 <input type="text"  >
             </form>
@@ -178,19 +152,13 @@
                     <i class='bx bxs-star-half' ></i>
                 </div>
             </div>
-            <h5> Fiyat Almak İçin</h5>
-            <select label="ulke"name="ulkelistesi" form="ulkeler">
-                <option value="ulkeleri">Ulkeler</option>
-                <option value="Turkye">Turkye</option>
-                <option value="avruba">Avruba</option>
-                <option value="eygept">Eygept</option>
-                <option value="EMR">EMR</option>
-            </select>
+            <p onmouseup="select();"> Fiyatı görmek için şehri seçin</p>
              <form action="" id="ulkeler">
                 <input type="text"  >
             </form>
             <i class='bx bx-cart'></i>
         </div>
+       
           <!--Box 6-->
           <div class="box">
             <div class="box-img">
@@ -206,14 +174,7 @@
                     <i class='bx bxs-star-half' ></i>
                 </div>
             </div>
-            <h5> Fiyat Almak İçin</h5>
-            <select label="ulke"name="ulkelistesi" form="ulkeler">
-                <option value="ulkeleri">Ulkeler</option>
-                <option value="Turkye">Turkye</option>
-                <option value="avruba">Avruba</option>
-                <option value="eygept">Eygept</option>
-                <option value="EMR">EMR</option>
-            </select>
+            <p onmouseup="select();"> Fiyatı görmek için şehri seçin</p>
              <form action="" id="ulkeler">
                 <input type="text"  >
             </form>
@@ -364,6 +325,46 @@
         Desined By <a href="#">ALAA SHAHROR/SAFA ELHASAN</a>
     </div>
 </footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    function select(){
+        	
+  const { value: fruit } =Swal.fire({
+  title: 'Select field validation',
+  input: 'select',
+  className:"btn",
+  inputOptions: {
+    'Fruits': {
+      apples: 'Apples',
+      bananas: 'Bananas',
+      grapes: 'Grapes',
+      oranges: 'Oranges'
+    },
+    'Vegetables': {
+      potato: 'Potato',
+      broccoli: 'Broccoli',
+      carrot: 'Carrot'
+    },
+    'icecream': 'Ice cream'
+  },
+  inputPlaceholder: 'Select a fruit',
+  showCancelButton: true,
+
+})
+
+if (fruit) {
+  Swal.fire(`You selected: ${fruit}`)
+}
+
+
+
+    }
+
+    
+</script>
+
 
 </body>
 </html>
