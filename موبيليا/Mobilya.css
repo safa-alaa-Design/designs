@@ -169,7 +169,8 @@ transition: 0.5s;
     font-size: 1rem;
     font-weight:600;
 }
-.shop-container .box p{
+.shop-container .box p,
+.new .new-container p{
     color: rgb(137, 35, 232);
     padding: 7px 0;
     font-size: 14px;
@@ -615,7 +616,7 @@ ___________comtact__________*/
  /***______________________
  __________shop sayfasi______*/
  #shospsayfasi{
-    margin: 100px 70px 50px 70px;
+    margin: 100px 0px;
     
  }
 
