@@ -73,13 +73,13 @@
 
 
 <section id="fromedatalis">
-    <form action="">
+    <form onsubmit="SendEmail(); reset(); return false; ">
         <span>LEAVE MESSAJE</span>
     <h2>We love to hear from you</h2>
-        <input type="text" placeholder="Your Name">
-        <input type="email" placeholder="E-mail">
-        <input type="text" placeholder="Subject">
-        <textarea name="" id="" cols="30" rows="10">Your Massaje</textarea>
+        <input type="text" id="name" placeholder="Your Name">
+        <input type="email" id="email" placeholder="E-mail">
+        <input type="phone" id="phone" placeholder="your phone">
+        <textarea name="" id="message" cols="30" rows="10" placeholder="your message"></textarea>
         <BUtton class="btn" >Submit</BUtton>
     </form>
 </section>  
@@ -87,11 +87,14 @@
 
 
 <!---->
-<section class="newsletter" id="contact">
+<section class="newsletter" id="contact2">
     <h2>Subscribe To Newsletter</h2>
     <div class="news-box">
-        <input type="text" placeholder="Enter Your Email...">
-        <a href="#" class="btn">Subscribe</a>
+        <form onsubmit=" SendEmail() ;reset(); return false; " >
+        <input type="email" id="email" placeholder="Enter Your Email...">
+        <button  class="btn">Subscribe</button>
+       
+    </form>
     </div>
 </section>
 
@@ -112,6 +115,24 @@
         Desined By <a href="#">ALAA SHAHROR/SAFA ELHASAN</a>
     </div>
 </footer>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
 
+function SendEmail() {
+    Email.send({
+    SecureToken : " 8eed4e08-4eb5-4060-9fbd-4c59bcde6f86" ,
+    To : 'ilyainterna@gmail.com',
+    From : "ilyainterna@gmail.com",
+    Subject : "text gmail",
+    Body : "name:" + document.getElementById("name").value
+    +"<br> Email" + document.getElementById("email").value
+    +"<br> phone no" + document.getElementById("phone").value
+    +"<br> Massage" + document.getElementById("messagr").value
+}).then(
+     message => alert("message sent saccesfully")
+);
+}
+
+</script>
 </body>
 </html>
