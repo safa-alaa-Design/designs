@@ -947,6 +947,31 @@ margin-right: 6px;
     .shop-container, .new-container{
         grid-template-cloumns: repeat(auto-fit,minmax(218px, auto))
     }
+
+    
+    .singl-pro-img
+    { width: 100%;
+        margin-top: 20px;
+    
+    }
+    #cardcoop{
+        display:block ;
+    }
+    .smull-imge-grup {
+        width: 75%;
+        padding-top: 12px;
+        padding-left: 4px;
+        display: flex;
+    }
+    .new-container{
+        width:80%;
+        padding-left: 25%;
+        padding-right: 8%;
+        display: block;
+}
+.card-headr{
+    display: inline;
+    padding-left: 0;
 }
 @media (max-width:768px){
     header{
@@ -1003,4 +1028,32 @@ margin-right: 6px;
         height: 80px;
         margin-bottom: 5px;
     }
+   
+    .singl-pro-img
+    { width: 100%;
+        margin-top: 20px;
+    
+    }
+    #cardcoop{
+        display: block;
+    }
+    .smull-imge-grup {
+        width: 75%;
+        padding-top: 12px;
+        padding-left: 4px;
+        display: flex;
+    }
+    .new-container{
+        
+            width:100%;
+            padding-left: 19%;
+            padding-right: 15%;
+            display: block;
+    }
+    .card-headr{
+        display: inline;
+    }
+      
+}
+    
 }
